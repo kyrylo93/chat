@@ -1,0 +1,24 @@
+.NavigationItem {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #3a3a3a;
+    height: 100%;
+    cursor: pointer;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.NavigationItem:focus,
+.NavigationItem:active,
+.NavigationItem:hover {
+    background-color: #fff;
+    color: #3c50fb;
+}
+
+.Logo {
+    margin-right: auto;
+}

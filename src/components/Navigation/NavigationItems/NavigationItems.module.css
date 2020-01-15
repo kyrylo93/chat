@@ -1,0 +1,10 @@
+.NavigationItems {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
