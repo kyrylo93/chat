@@ -7,6 +7,7 @@
     font-size: 1.2em;
     line-height: 1em;
 
+    cursor: pointer;
     box-sizing: border-box;
 
     color: #3c50fb;
@@ -19,4 +20,11 @@
 .Button:hover {
     background-color: #3c50fb;
     color: #fff;
+}
+
+.Button:disabled {
+    background-color: #e3e3e3;
+    color: black;
+    opacity: .3;
+    cursor: not-allowed;
 }

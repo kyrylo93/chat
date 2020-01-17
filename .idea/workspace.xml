@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/inputValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,10 @@
       <workItem from="1579075495122" duration="5805000" />
       <workItem from="1579092934681" duration="1549000" />
       <workItem from="1579095548462" duration="3462000" />
-      <workItem from="1579181921221" duration="601000" />
+      <workItem from="1579181921221" duration="1656000" />
+      <workItem from="1579186688541" duration="5403000" />
+      <workItem from="1579247248573" duration="317000" />
+      <workItem from="1579247867998" duration="16993000" />
     </task>
     <servers />
   </component>
@@ -155,5 +158,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1579084008521" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579182917585">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1579182917585" />
   </component>
 </project>

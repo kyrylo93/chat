@@ -1,17 +1,16 @@
 import React from "react";
+import classes from './Input.module.css';
 
 const Input = props => {
 	
-	switch (props.type) {
-		case 'userName' :
-			return <input type='text' placeholder='Your Name' />;
-		case 'userAge' :
-			return  <input type="number" placeholder='Your Age' />;
-		case 'useCountry' :
-			return <input placeholder='Your Country' type="text"/>;
-		default:
-			throw new Error('Should be an input type!');
-	}
+	return (
+		<input
+			type = {props.type}
+			value = {props.value}
+			onChange={props.inputHandler}
+			placeholder = {props.placeholder}
+			className={ props.isTouched ? props.isValid ? classes.Valid : classes.Invalid : null}
+		/>)
 };
 
 export default Input;

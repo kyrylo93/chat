@@ -9,8 +9,8 @@ const NavigationItems = (props) => {
 	return (
 		<ul className={classes.NavigationItems}>
 			<NavigationItem itemName={'Logo'} path={'/'} isLogo />
-			<NavigationItem itemName={'People'} path={'/people'} />
-			<NavigationItem itemName={'Chat'} path={'/chat'} />
+			<NavigationItem itemName={'People'} path={'/people'} disabled />
+			<NavigationItem itemName={'Chat'} path={'/chat'} disabled />
 		</ul>
 	)
 };
