@@ -3,6 +3,7 @@ import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
+import Modal from "../UI/Modal/Modal";
 
 const UserForm = () => {
 	const [userName, setUserName] = useState({
@@ -118,13 +119,20 @@ const UserForm = () => {
 	});
 	
 	return (
-		<form className={classes.UserForm} onSubmit={submitHandler}>
-			{inputs}
-			<Button
-				btnText='Submit'
-				disabled={checkFormValid()}
-				clicked={(e) => submitHandler(e)} />
-		</form>
+		<React.Fragment>
+			<Modal
+				title='You were a success!'
+				message="Now you can proceed and choose your chat partner"
+				btnText='Choose your pen pal'
+			/>
+			<form className={classes.UserForm} onSubmit={submitHandler}>
+				{inputs}
+				<Button
+					btnText='Submit'
+					disabled={checkFormValid()}
+					clicked={(e) => submitHandler(e)} />
+			</form>
+		</React.Fragment>
 	)
 };
 
