@@ -3,13 +3,14 @@ import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
-import Modal from "../UI/Modal/Modal";
 
-const UserForm = () => {
+// TODO clear all values
+
+const UserForm = props => {
 	const [userName, setUserName] = useState({
 		type: 'text',
 		id: 'userName',
-		value: '',
+		value: '22',
 		placeholder: 'Your Name',
 		validation: {
 			required: true,
@@ -23,7 +24,7 @@ const UserForm = () => {
 	const [userAge, setUserAge] = useState({
 		type: 'number',
 		id: 'userAge',
-		value: '',
+		value: '2',
 		placeholder: 'Your Age',
 		validation: {
 			required: true,
@@ -37,7 +38,7 @@ const UserForm = () => {
 	const [userCountry, setUserCountry] = useState({
 		type: 'text',
 		id: 'userCountry',
-		value: '',
+		value: '22',
 		placeholder: 'Your Country',
 		validation: {
 			required: true,
@@ -103,6 +104,7 @@ const UserForm = () => {
 	
 	const submitHandler = (event) => {
 		event.preventDefault();
+		props.setModalVisibility(true);
 	};
 	
 	const inputs = formInputs.map(input => {
@@ -119,20 +121,13 @@ const UserForm = () => {
 	});
 	
 	return (
-		<React.Fragment>
-			<Modal
-				title='You were a success!'
-				message="Now you can proceed and choose your chat partner"
-				btnText='Choose your pen pal'
-			/>
-			<form className={classes.UserForm} onSubmit={submitHandler}>
-				{inputs}
-				<Button
-					btnText='Submit'
-					disabled={checkFormValid()}
-					clicked={(e) => submitHandler(e)} />
-			</form>
-		</React.Fragment>
+		<form className={classes.UserForm} onSubmit={submitHandler}>
+			{inputs}
+			<Button
+				btnText='Submit'
+				disabled={checkFormValid()}
+				clicked={(e) => submitHandler(e)} />
+		</form>
 	)
 };
 
