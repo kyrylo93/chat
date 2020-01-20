@@ -24,7 +24,7 @@ const MainPage = () => {
 			<p>Please, fill in the form</p>
 			<UserForm setModalVisibility={boolean => setModalVisibility(boolean)} />
 			{modal}
-			{makeRedirect ? <Redirect to='/people' /> : null}
+			{makeRedirect ? <Redirect to='/pen-pals' /> : null}
 			
 		</section>
 	)
