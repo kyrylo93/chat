@@ -4,13 +4,11 @@ import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
 
-// TODO clear all values
-
 const UserForm = props => {
 	const [userName, setUserName] = useState({
 		type: 'text',
 		id: 'userName',
-		value: '22',
+		value: '',
 		placeholder: 'Your Name',
 		validation: {
 			required: true,
@@ -24,7 +22,7 @@ const UserForm = props => {
 	const [userAge, setUserAge] = useState({
 		type: 'number',
 		id: 'userAge',
-		value: '2',
+		value: '',
 		placeholder: 'Your Age',
 		validation: {
 			required: true,
@@ -38,7 +36,7 @@ const UserForm = props => {
 	const [userCountry, setUserCountry] = useState({
 		type: 'text',
 		id: 'userCountry',
-		value: '22',
+		value: '',
 		placeholder: 'Your Country',
 		validation: {
 			required: true,
