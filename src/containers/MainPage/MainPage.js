@@ -25,7 +25,6 @@ const MainPage = () => {
 			<UserForm setModalVisibility={boolean => setModalVisibility(boolean)} />
 			{modal}
 			{makeRedirect ? <Redirect to='/pen-pals' /> : null}
-			
 		</section>
 	)
 };

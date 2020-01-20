@@ -1,0 +1,8 @@
+.PenPalsList {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 5%;
+}

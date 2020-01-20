@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/PenPals/PenPals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/PenPals/PenPals.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +126,8 @@
       <workItem from="1579341213326" duration="1508000" />
       <workItem from="1579362711591" duration="4196000" />
       <workItem from="1579432426607" duration="837000" />
+      <workItem from="1579511774219" duration="615000" />
+      <workItem from="1579521073827" duration="2148000" />
     </task>
     <servers />
   </component>
@@ -154,10 +162,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1579182421550" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579084008521">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="503" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579521310215">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="503" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1579521310215" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1579084008521" />
+    <state x="378" y="207" width="683" height="486" key="find.popup" timestamp="1579525613395">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="378" y="207" width="683" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579525613395" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579342228813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
