@@ -1,7 +1,10 @@
 .ChatInput {
     width: 50%;
-    margin: 0 auto;
+    left: 25%;
     text-align: center;
+
+    position: fixed;
+    bottom: 0;
 }
 
 .ChatInput textarea {
@@ -10,4 +13,15 @@
     max-height: 200px;
     resize: none;
     font-size: 1.2em;
+    padding: 1% 2%;
+    box-sizing: border-box;
+
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
 }
+
+.ChatInput textarea:focus,
+.ChatInput textarea:hover {
+    border-color: #3c50fb;
+}
+
