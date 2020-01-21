@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/PenPals/PenPals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/PenPals/PenPals.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PenPalCard/PenPalCard.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/PenPals/PenPals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PenPals/PenPals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <workItem from="1579362711591" duration="4196000" />
       <workItem from="1579432426607" duration="837000" />
       <workItem from="1579511774219" duration="615000" />
-      <workItem from="1579521073827" duration="2148000" />
+      <workItem from="1579521073827" duration="5806000" />
     </task>
     <servers />
   </component>

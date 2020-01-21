@@ -8,9 +8,12 @@ const PenPalsList = props => {
 		return (
 			<PenPalCard
 				key={el.id}
-				username={el.username}
 				name={el.name}
 				email={el.email}
+				username={el.username}
+				cardClick={() =>
+					props.cardClick({ id: el.id, username: el.username})
+				}
 			/>
 		)
 	});
