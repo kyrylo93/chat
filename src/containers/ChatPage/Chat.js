@@ -3,6 +3,8 @@ import classes from "./Chat.module.css";
 import ChatInput from "../../components/ChatInput/ChatInput";
 import ChatWindow from "../../components/ChatWindow/ChatWindow";
 
+// TODO -> add a function: when user SetNewMessage => scroll Page down to the last message
+
 const Chat = () => {
 	const [inputValue, setInputValue] = useState('');
 	const [messages, setNewMessage] = useState([ { isAuthor: false, text: "Hi Barbara, let's go out", time: '19:33' } ]);
