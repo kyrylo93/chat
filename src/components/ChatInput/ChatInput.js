@@ -17,7 +17,7 @@ const ChatInput = props => {
 			<Button
 				btnText='Send'
 				disabled={isButtonDisabled}
-				clicked={() => console.log('s')}
+				clicked={props.btnClick}
 			/>
 		</section>
 	)

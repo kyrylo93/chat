@@ -1,0 +1,9 @@
+p.User {
+    margin-right: inherit;
+    margin-left: auto;
+    color: rgb(60, 80, 251);
+}
+
+p:hover {
+    color: white;
+}

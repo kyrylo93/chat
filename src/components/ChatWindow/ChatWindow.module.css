@@ -1,0 +1,27 @@
+.ChatWindow {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 50vh;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    background-color: rgba(145, 145, 145, 0.51);
+}
+
+.ChatWindow p {
+    margin: 0;
+    margin-bottom: 1%;
+    font-weight: 600;
+    max-width: 400px;
+    margin-right: auto;
+}
+
+
+.ChatWindow span {
+   font-size: .7em;
+    margin-left: 15px;
+    font-weight: 700;
+    color: gray;
+}
+
