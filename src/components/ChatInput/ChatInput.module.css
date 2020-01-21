@@ -1,0 +1,13 @@
+.ChatInput {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ChatInput textarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    resize: none;
+    font-size: 1.2em;
+}
