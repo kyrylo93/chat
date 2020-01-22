@@ -4,6 +4,7 @@ import ChatInput from "../../components/ChatInput/ChatInput";
 import ChatWindow from "../../components/ChatWindow/ChatWindow";
 
 // TODO -> add a function: when user SetNewMessage => scroll Page down to the last message
+// TODO -> 	// sara.scrollTo(500, 500, {behavior: 'smooth'})
 
 const Chat = () => {
 	const [inputValue, setInputValue] = useState('');
