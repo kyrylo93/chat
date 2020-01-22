@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, useContext} from "react";
 import { Redirect } from "react-router";
+import { UserFormContext } from "../../context/UserFormContext";
 import axios from 'axios';
 import Modal from "../../components/UI/Modal/Modal";
 import PenPalsList from "../../components/PenPalsList/PenPalsList";
@@ -8,7 +9,6 @@ import classes from './PenPals.module.css';
 const PenPals = () => {
 	const [isModalVisible, setModalVisibility] = useState(false);
 	const [makeRedirect, setMakeRedirect] = useState(false);
-	
 	const [ penPalsList, setPenPalsList ] = useState(null);
 	
 	useEffect(() => {
@@ -29,15 +29,15 @@ const PenPals = () => {
 		/>
 		: null;
 	
-	const pickPenPal = (userData) => {
-		console.log(userData);
-		console.log('picked penpal');
+	const pickPenPal = () => {
 		setModalVisibility(true);
 	};
 	
+	const { userName } = useContext(UserFormContext);
+	
 	return (
 		<section className={classes.PenPals}>
-			<h2>Please, choose your new pen pal</h2>
+			<h2>{userName}, please, choose your new pen pal</h2>
 			{ penPalsList && <PenPalsList cardClick={pickPenPal} penPals={penPalsList} />}
 			{modal}
 			{makeRedirect ? <Redirect to={'/chat'} /> : null}

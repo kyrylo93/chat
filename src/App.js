@@ -8,18 +8,22 @@ import Chat from "./containers/ChatPage/Chat";
 
 import './App.css';
 
+import { UserFormProvider } from './context/UserFormContext';
+
 
 
 const App = () => {
   return (
-   <section>
-       <Toolbar />
-       <Switch>
-           <Route path={'/chat'} exact component={Chat} />
-           <Route path={'/pen-pals'} exact component={PenPals} />
-           <Route path={'/'} exact component={MainPage} />
-       </Switch>
-   </section>
+      <UserFormProvider>
+           <section>
+               <Toolbar />
+               <Switch>
+                   <Route path={'/chat'} exact component={Chat} />
+                   <Route path={'/pen-pals'} exact component={PenPals} />
+                   <Route path={'/'} exact component={MainPage} />
+               </Switch>
+           </section>
+      </UserFormProvider>
   )
 };
 

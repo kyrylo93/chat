@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { UserFormContext } from "../../context/UserFormContext";
 import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
 
 const UserForm = props => {
-	const [userName, setUserName] = useState({
+	const { userName, setUserName } = useContext(UserFormContext);
+	
+	const [userNameConfig, setUserNameState] = useState({
 		type: 'text',
 		id: 'userName',
-		value: '',
+		value: userName,
 		placeholder: 'Your Name',
 		validation: {
 			required: true,
@@ -47,7 +50,7 @@ const UserForm = props => {
 		touched: false,
 	});
 	
-	const formInputs = [userName, userAge, userCountry];
+	const formInputs = [userNameConfig, userAge, userCountry];
 
 	const inputHandler = (event, inputType, rules) => {
 		const newValue = event.target.value;
@@ -55,13 +58,14 @@ const UserForm = props => {
 		
 		switch (inputType) {
 			case 'userName' :
-				setUserName( prevState => {
+				setUserNameState( prevState => {
+					setUserName(newValue);
 					return {
 						...prevState,
 						value: newValue,
 						valid: newIsValid,
 						touched: true,
-					}
+					};
 				});
 				break;
 				
@@ -117,6 +121,8 @@ const UserForm = props => {
 				inputHandler = {(event) => inputHandler(event, input.id, input.validation)}
 			/>)
 	});
+	
+	
 	
 	return (
 		<form className={classes.UserForm} onSubmit={submitHandler}>
