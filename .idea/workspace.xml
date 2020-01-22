@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/context/UserFormContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/context/SitePageUserContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ChatWindow/ChatMessage/ChatMessage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatWindow/ChatMessage/ChatMessage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +123,7 @@
       <workItem from="1579511774219" duration="615000" />
       <workItem from="1579521073827" duration="13284000" />
       <workItem from="1579616759715" duration="2426000" />
-      <workItem from="1579685131088" duration="6446000" />
+      <workItem from="1579685131088" duration="8367000" />
     </task>
     <servers />
   </component>
