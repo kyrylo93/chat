@@ -4,9 +4,11 @@ import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
+import { SitePageUserContext } from "../../context/SitePageUserContext";
 
 const UserForm = props => {
 	const { userName, setUserName } = useContext(UserFormContext);
+	const { setUserRegistered } = useContext(SitePageUserContext);
 	
 	const [userNameConfig, setUserNameState] = useState({
 		type: 'text',
@@ -101,6 +103,8 @@ const UserForm = props => {
 			return value.valid ? acc + 1 : acc;
 		}, 0);
 		
+		setUserRegistered(sum === formInputs.length);
+		
 		return !(sum === formInputs.length);
 	};
 	
@@ -121,8 +125,6 @@ const UserForm = props => {
 				inputHandler = {(event) => inputHandler(event, input.id, input.validation)}
 			/>)
 	});
-	
-	
 	
 	return (
 		<form className={classes.UserForm} onSubmit={submitHandler}>
