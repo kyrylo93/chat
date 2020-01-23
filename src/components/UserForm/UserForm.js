@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
@@ -7,52 +7,10 @@ import { UserFormContext } from "../../context/UserFormContext";
 import { SitePageUserContext } from "../../context/SitePageUserContext";
 
 const UserForm = props => {
-	const { userName, setUserName } = useContext(UserFormContext);
+	const { userName, setUserName, userAge, setUserAge, userCountry, setUserCountry } = useContext(UserFormContext);
 	const { setUserRegistered } = useContext(SitePageUserContext);
 	
-	const [userNameConfig, setUserNameState] = useState({
-		type: 'text',
-		id: 'userName',
-		value: userName,
-		placeholder: 'Your Name',
-		validation: {
-			required: true,
-			minLength: 3,
-			maxLength: 20,
-		},
-		valid: false,
-		touched: false,
-	});
-	
-	const [userAge, setUserAge] = useState({
-		type: 'number',
-		id: 'userAge',
-		value: '',
-		placeholder: 'Your Age',
-		validation: {
-			required: true,
-			minValue: 18,
-			maxValue: 100,
-		},
-		valid: false,
-		touched: false,
-	});
-	
-	const [userCountry, setUserCountry] = useState({
-		type: 'text',
-		id: 'userCountry',
-		value: '',
-		placeholder: 'Your Country',
-		validation: {
-			required: true,
-			minLength: 3,
-			maxLength: 25,
-		},
-		valid: false,
-		touched: false,
-	});
-	
-	const formInputs = [userNameConfig, userAge, userCountry];
+	const formInputs = [userName, userAge, userCountry];
 
 	const inputHandler = (event, inputType, rules) => {
 		const newValue = event.target.value;
@@ -60,8 +18,7 @@ const UserForm = props => {
 		
 		switch (inputType) {
 			case 'userName' :
-				setUserNameState( prevState => {
-					setUserName(newValue);
+				setUserName( prevState => {
 					return {
 						...prevState,
 						value: newValue,

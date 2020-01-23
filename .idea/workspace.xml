@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/UserFormContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/UserFormContext.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
