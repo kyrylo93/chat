@@ -60,13 +60,13 @@ const UserForm = props => {
 			return value.valid ? acc + 1 : acc;
 		}, 0);
 		
-		setUserRegistered(sum === formInputs.length);
 		
 		return !(sum === formInputs.length);
 	};
 	
 	const submitHandler = (event) => {
 		event.preventDefault();
+		setUserRegistered(true);
 		props.setModalVisibility(true);
 	};
 	
