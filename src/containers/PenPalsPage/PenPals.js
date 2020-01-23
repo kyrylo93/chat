@@ -25,14 +25,14 @@ const PenPals = () => {
 	
 	const modal = isModalVisible
 		? <Modal
-			show={isModalVisible}
 			title='You have chosen a user!'
+			message="Please, confirm"
+			show={isModalVisible}
 			btnText='Start chat'
 			bntClick={() => {
 				setUserPickedUser(true);
 				setMakeRedirect(true);
 			}}
-			message="Please, confirm"
 			setModalVisibility={boolean => setModalVisibility(boolean)}
 		/>
 		: null;
@@ -43,7 +43,7 @@ const PenPals = () => {
 	
 	return (
 		<section className={classes.PenPals}>
-			<h2>{userName}, please, choose your new pen pal</h2>
+			<h2>{userName.value}, please, choose your new pen pal</h2>
 			{ penPalsList && <PenPalsList cardClick={pickPenPal} penPals={penPalsList} />}
 			{modal}
 			{makeRedirect ? <Redirect to={'/chat'} /> : null}

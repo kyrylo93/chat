@@ -3,7 +3,6 @@ import PenPalCard from "./PenPalCard/PenPalCard";
 import classes from './PenPalsList.module.css';
 
 const PenPalsList = props => {
-	
 	const penPals = props.penPals.map(el => {
 		return (
 			<PenPalCard

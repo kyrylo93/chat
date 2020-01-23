@@ -10,14 +10,13 @@ import {UserFormContext} from "../../context/UserFormContext";
 const Chat = () => {
 	const { userName } = useContext(UserFormContext);
 	const [inputValue, setInputValue] = useState('');
-	const [messages, setNewMessage] = useState([ { isAuthor: false, text: `Hi ${userName}, let's go out`, time: '19:33' } ]);
+	const [messages, setNewMessage] = useState([ { isAuthor: false, text: `Hi ${userName.value}, let's go out`, time: '19:33' } ]);
 	
 	const addNewMessage = () => {
 		const updatedMsgList = [...messages].concat({isAuthor: true, text: inputValue, time: '19:33'});
 		setNewMessage(updatedMsgList);
 		setInputValue('');
 	};
-	
 	
 	return (
 		<section className={classes.Chat}>
