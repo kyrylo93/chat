@@ -1,8 +1,8 @@
 import React from "react";
 import NavigationItems from "../NavigationItems/NavigationItems";
-import classes from './Toolbar.module.css';
+import classes from './NavBar.module.css';
 
-const Toolbar = () => {
+const NavBar = () => {
 	return (
 		<nav className={classes.Toolbar}>
 			<NavigationItems />
@@ -10,4 +10,4 @@ const Toolbar = () => {
 	)
 };
 
-export default Toolbar;
+export default NavBar;

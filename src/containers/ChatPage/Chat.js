@@ -3,12 +3,15 @@ import classes from "./Chat.module.css";
 import ChatInput from "../../components/ChatInput/ChatInput";
 import ChatWindow from "../../components/ChatWindow/ChatWindow";
 import {UserFormContext} from "../../context/UserFormContext";
+import {SitePageUserContext} from "../../context/SitePageUserContext";
+import {Redirect} from "react-router";
 
 // TODO -> add a function: when user SetNewMessage => scroll Page down to the last message
 // TODO -> 	// sara.scrollTo(500, 500, {behavior: 'smooth'})
 
 const Chat = () => {
 	const { userName } = useContext(UserFormContext);
+	const { isUserRegistered, isUserPickedUser } = useContext(SitePageUserContext);
 	const [inputValue, setInputValue] = useState('');
 	const [messages, setNewMessage] = useState([ { isAuthor: false, text: `Hi ${userName.value}, let's go out`, time: '19:33' } ]);
 	
@@ -20,6 +23,8 @@ const Chat = () => {
 	
 	return (
 		<section className={classes.Chat}>
+			{(isUserRegistered && isUserPickedUser) ? null : <Redirect to={'/'}/>}
+			
 			<h2>Chat</h2>
 			<ChatWindow
 				messages={messages}

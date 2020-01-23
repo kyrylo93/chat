@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Toolbar/Toolbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavBar/NavBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

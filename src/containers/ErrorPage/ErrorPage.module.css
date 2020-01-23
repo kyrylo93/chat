@@ -1,0 +1,13 @@
+.ErrorPage {
+    text-align: center;
+}
+
+.ErrorPage p {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+
+.ErrorPage h3 {
+    margin-top: 20%;
+}

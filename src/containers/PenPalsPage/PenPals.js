@@ -14,7 +14,9 @@ const PenPals = () => {
 	const [ penPalsList, setPenPalsList ] = useState(null);
 	
 	const { userName } = useContext(UserFormContext);
-	const { setUserPickedUser } = useContext(SitePageUserContext);
+	const { isUserRegistered, setUserPickedUser } = useContext(SitePageUserContext);
+	
+	// TODO move axios request to own Context
 	
 	useEffect(() => {
 		axios('https://jsonplaceholder.typicode.com/users')
@@ -43,6 +45,9 @@ const PenPals = () => {
 	
 	return (
 		<section className={classes.PenPals}>
+			
+			{isUserRegistered ? null : <Redirect to={'/'} />}
+			
 			<h2>{userName.value}, please, choose your new pen pal</h2>
 			{ penPalsList && <PenPalsList cardClick={pickPenPal} penPals={penPalsList} />}
 			{modal}
