@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
-import { UserFormContext } from "../../context/UserFormContext";
 import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
+import { UserFormContext } from "../../context/UserFormContext";
 import { SitePageUserContext } from "../../context/SitePageUserContext";
 
 const UserForm = props => {

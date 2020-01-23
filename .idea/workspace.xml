@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/SitePageUserContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/SitePageUserContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,10 +139,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579686480208">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579770373145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1579686480208" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1579770373145" />
     <state width="1419" height="251" key="GridCell.Tab.0.bottom" timestamp="1579085426740">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -164,10 +168,10 @@
     </state>
     <state x="503" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1579521310215" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1579084008521" />
-    <state x="378" y="207" width="837" height="550" key="find.popup" timestamp="1579697023602">
+    <state x="378" y="207" width="837" height="550" key="find.popup" timestamp="1579769720350">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579697023602" />
+    <state x="378" y="207" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579769720350" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579342228813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
