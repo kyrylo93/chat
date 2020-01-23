@@ -1,15 +1,20 @@
 import React, {useState, useEffect, useContext} from "react";
-import { Redirect } from "react-router";
-import { UserFormContext } from "../../context/UserFormContext";
-import axios from 'axios';
-import Modal from "../../components/UI/Modal/Modal";
-import PenPalsList from "../../components/PenPalsList/PenPalsList";
 import classes from './PenPals.module.css';
+
+import axios from 'axios';
+import { Redirect } from "react-router";
+import Modal from "../../components/UI/Modal/Modal";
+import { UserFormContext } from "../../context/UserFormContext";
+import PenPalsList from "../../components/PenPalsList/PenPalsList";
+import {SitePageUserContext} from "../../context/SitePageUserContext";
 
 const PenPals = () => {
 	const [isModalVisible, setModalVisibility] = useState(false);
 	const [makeRedirect, setMakeRedirect] = useState(false);
 	const [ penPalsList, setPenPalsList ] = useState(null);
+	
+	const { userName } = useContext(UserFormContext);
+	const { setUserPickedUser } = useContext(SitePageUserContext);
 	
 	useEffect(() => {
 		axios('https://jsonplaceholder.typicode.com/users')
@@ -23,7 +28,10 @@ const PenPals = () => {
 			show={isModalVisible}
 			title='You have chosen a user!'
 			btnText='Start chat'
-			bntClick={() => setMakeRedirect(true)}
+			bntClick={() => {
+				setUserPickedUser(true);
+				setMakeRedirect(true);
+			}}
 			message="Please, confirm"
 			setModalVisibility={boolean => setModalVisibility(boolean)}
 		/>
@@ -32,8 +40,6 @@ const PenPals = () => {
 	const pickPenPal = () => {
 		setModalVisibility(true);
 	};
-	
-	const { userName } = useContext(UserFormContext);
 	
 	return (
 		<section className={classes.PenPals}>
