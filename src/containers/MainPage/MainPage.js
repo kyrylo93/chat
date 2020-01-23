@@ -9,6 +9,11 @@ const MainPage = () => {
 	const [isModalVisible, setModalVisibility] = useState(false);
 	const [makeRedirect, setMakeRedirect] = useState(false);
 	const { isUserRegistered } = useContext(SitePageUserContext);
+	
+	if (makeRedirect) {
+		return <Redirect to='/pen-pals' />;
+	}
+	
 	const modal = isModalVisible
 		? <Modal
 			show={isModalVisible}
@@ -30,7 +35,6 @@ const MainPage = () => {
 			<p>Please, fill in the form</p>
 			{formStatus}
 			{modal}
-			{makeRedirect ? <Redirect to='/pen-pals' /> : null}
 		</section>
 	)
 };

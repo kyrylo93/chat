@@ -18,3 +18,13 @@ const FullApp = () => (
 
 ReactDOM.render( <FullApp />, document.getElementById('root'));
 serviceWorker.unregister();
+
+
+// TODO separate formValidation from form values(userName ....)
+// TODO change props names from btnClick -> onClick, btnText => text and like that
+// TODO Backdrop close={() => props.setModalVisibility(false)} /> => onClose
+// TODO <React.Fragment> change to <>
+// TODO make destr. from props: from ChatInput = props => { to ChatInput = ({btnClick, inputValue})
+// TODO Move {make redirect} from JSX to the top of Component, to prevent unnecessary code
+// TODO change makeRedirect to understandable name (penPalsChosen)
+// TODO move formStatus to own component
