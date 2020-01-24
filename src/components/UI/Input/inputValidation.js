@@ -1,20 +1,20 @@
-const inputValidation = (value, rules) => {
+const inputValidation = (value, {required, minLength, maxLength, minValue, maxValue}) => {
 	let isValid = true;
 	
-	if (rules.required && isValid) {
+	if (required && isValid) {
 		isValid = value.trim() !== '';
 	}
-	if (rules.minLength && isValid) {
-		isValid = value.length >= rules.minLength;
+	if (minLength && isValid) {
+		isValid = value.length >= minLength;
 	}
-	if (rules.maxLength && isValid) {
-		isValid = value.length <= rules.maxLength;
+	if (maxLength && isValid) {
+		isValid = value.length <= maxLength;
 	}
-	if (rules.minValue && isValid) {
-		isValid = parseFloat(value) >= rules.minValue;
+	if (minValue && isValid) {
+		isValid = parseFloat(value) >= minValue;
 	}
-	if (rules.maxValue && isValid) {
-		isValid = parseFloat(value) <= rules.maxValue;
+	if (maxValue && isValid) {
+		isValid = parseFloat(value) <= maxValue;
 	}
 	
 	return isValid;

@@ -3,21 +3,15 @@ import { NavLink } from "react-router-dom";
 import Logo from "../../../UI/Logo/Logo";
 import classes from './NavigationItem.module.css';
 
-const NavigationItem = props => {
+const NavigationItem = ({itemName, path}) => {
 	
-	if (props.itemName === 'Logo') {
-		
+	if (itemName === 'Logo') {
 		return (
-			<NavLink to={props.path} className={[classes.NavigationItem, classes.Logo].join(' ')}><Logo /></NavLink>
+			<NavLink to={path} className={[classes.NavigationItem, classes.Logo].join(' ')}><Logo /></NavLink>
 		)
 	}
 	
-	return (
-		<NavLink
-			to={props.path}
-			className={classes.NavigationItem}
-	        >{props.itemName}</NavLink>
-	)
+	return <NavLink to={path} className={classes.NavigationItem}>{itemName}</NavLink>;
 };
 
 export default NavigationItem;

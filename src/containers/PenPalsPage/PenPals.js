@@ -9,12 +9,12 @@ import PenPalsList from "../../components/PenPalsList/PenPalsList";
 import {SitePageUserContext} from "../../context/SitePageUserContext";
 
 const PenPals = () => {
-	const [isModalVisible, setModalVisibility] = useState(false);
-	const [makeRedirect, setMakeRedirect] = useState(false);
+	const [isModalVisible, setModalVisible] = useState(false);
+	const [doRedirect, setDoRedirect] = useState(false);
 	const [ penPalsList, setPenPalsList ] = useState(null);
 	
 	const { userName } = useContext(UserFormContext);
-	const { isUserRegistered, setUserPickedUser } = useContext(SitePageUserContext);
+	const { setUserPickedUser } = useContext(SitePageUserContext);
 	
 	// TODO move axios request to own Context
 	
@@ -25,33 +25,34 @@ const PenPals = () => {
 	}, []);
 	
 	
+	if (doRedirect) {
+		return <Redirect to={'/chat'} />;
+	}
+	
+	
 	const modal = isModalVisible
 		? <Modal
 			title='You have chosen a user!'
 			message="Please, confirm"
 			show={isModalVisible}
 			btnText='Start chat'
-			bntClick={() => {
+			onClick={() => {
 				setUserPickedUser(true);
-				setMakeRedirect(true);
+				setDoRedirect(true);
 			}}
-			setModalVisibility={boolean => setModalVisibility(boolean)}
+			onClose={boolean => setModalVisible(boolean)}
 		/>
 		: null;
 	
 	const pickPenPal = () => {
-		setModalVisibility(true);
+		setModalVisible(true);
 	};
 	
 	return (
 		<section className={classes.PenPals}>
-			
-			{isUserRegistered ? null : <Redirect to={'/'} />}
-			
 			<h2>{userName.value}, please, choose your new pen pal</h2>
 			{ penPalsList && <PenPalsList cardClick={pickPenPal} penPals={penPalsList} />}
 			{modal}
-			{makeRedirect ? <Redirect to={'/chat'} /> : null}
 		</section>
 	)
 };

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 export const UserFormContext = React.createContext({});
 
-export const UserFormProvider = props => {
+export const UserFormProvider = ({children}) => {
 	
 	const [userName, setUserName] = useState({
 		type: 'text',
@@ -48,7 +48,7 @@ export const UserFormProvider = props => {
 	
 	return (
 		<UserFormContext.Provider
-			children={props.children}
+			children={children}
 			value={{ userName, setUserName, userAge, setUserAge, userCountry, setUserCountry }} />
 	)
 };

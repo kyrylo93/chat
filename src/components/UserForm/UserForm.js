@@ -4,11 +4,9 @@ import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
 import { UserFormContext } from "../../context/UserFormContext";
-import { SitePageUserContext } from "../../context/SitePageUserContext";
 
-const UserForm = props => {
+const UserForm = ({setModalVisible}) => {
 	const { userName, setUserName, userAge, setUserAge, userCountry, setUserCountry } = useContext(UserFormContext);
-	const { setUserRegistered } = useContext(SitePageUserContext);
 	
 	const formInputs = [userName, userAge, userCountry];
 
@@ -60,14 +58,12 @@ const UserForm = props => {
 			return value.valid ? acc + 1 : acc;
 		}, 0);
 		
-		
 		return !(sum === formInputs.length);
 	};
 	
 	const submitHandler = (event) => {
 		event.preventDefault();
-		setUserRegistered(true);
-		props.setModalVisibility(true);
+		setModalVisible(true);
 	};
 	
 	const inputs = formInputs.map(input => {
@@ -87,9 +83,9 @@ const UserForm = props => {
 		<form className={classes.UserForm} onSubmit={submitHandler}>
 			{inputs}
 			<Button
-				btnText='Submit'
+				text='Submit'
 				disabled={checkFormValid()}
-				clicked={(e) => submitHandler(e)} />
+				onClick={submitHandler} />
 		</form>
 	)
 };

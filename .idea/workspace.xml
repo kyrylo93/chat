@@ -3,7 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="9a8f1145-6af9-4967-8bc9-7248416a7fe7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatInput/ChatInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatInput/ChatInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatWindow/ChatMessage/ChatMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatWindow/ChatMessage/ChatMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatWindow/ChatWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatWindow/ChatWindow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PenPalsList/PenPalCard/PenPalCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalCard/PenPalCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PenPalsList/PenPalsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Input/inputValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Input/inputValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Modal/Modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserForm/UserForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ChatPage/Chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/ErrorPage/ErrorPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/MainPage/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/PenPalsPage/PenPals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/SitePageUserContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/SitePageUserContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/UserFormContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/UserFormContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +119,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -125,6 +145,7 @@
       <workItem from="1579521073827" duration="13284000" />
       <workItem from="1579616759715" duration="2426000" />
       <workItem from="1579685131088" duration="10519000" />
+      <workItem from="1579852275887" duration="2858000" />
     </task>
     <servers />
   </component>
@@ -164,10 +185,10 @@
     </state>
     <state x="503" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1579521310215" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1579084008521" />
-    <state x="378" y="207" width="837" height="550" key="find.popup" timestamp="1579780995628">
+    <state x="378" y="207" width="837" height="550" key="find.popup" timestamp="1579855266118">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="378" y="207" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579780995628" />
+    <state x="378" y="207" width="837" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1579855266118" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1579342228813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

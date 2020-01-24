@@ -1,8 +1,8 @@
 import React from "react";
 import classes from './Backdrop.module.css';
-const Backdrop = props => (
+const Backdrop = ({close}) => (
 	<div
-		onClick={props.close}
+		onClick={close}
 		className={classes.Backdrop}
 	/>);
 
