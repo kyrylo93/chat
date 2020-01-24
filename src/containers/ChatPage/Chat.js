@@ -11,7 +11,7 @@ const Chat = () => {
 	const { userName } = useContext(UserFormContext);
 	const [inputValue, setInputValue] = useState('');
 	const [messages, setNewMessage] = useState([
-		{ isAuthor: false, text: `Hi ${userName.value}, let's go out`, time: '19:33' }
+		{ isAuthor: false, text: `Hi ${userName}, let's go out`, time: '19:33' }
 	]);
 	
 	const addNewMessage = () => {

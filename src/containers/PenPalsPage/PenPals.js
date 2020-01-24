@@ -50,7 +50,7 @@ const PenPals = () => {
 	
 	return (
 		<section className={classes.PenPals}>
-			<h2>{userName.value}, please, choose your new pen pal</h2>
+			<h2>{userName}, please, choose your new pen pal</h2>
 			{ penPalsList && <PenPalsList cardClick={pickPenPal} penPals={penPalsList} />}
 			{modal}
 		</section>

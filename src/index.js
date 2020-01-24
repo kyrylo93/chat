@@ -18,7 +18,3 @@ const FullApp = () => (
 
 ReactDOM.render( <FullApp />, document.getElementById('root'));
 serviceWorker.unregister();
-
-
-// TODO separate formValidation from form values(userName ....)
-// TODO move formStatus to own component
