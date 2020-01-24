@@ -2,22 +2,22 @@ import React from "react";
 import Button from "../UI/Button/Button";
 import classes from './ChatInput.module.css';
 
-const ChatInput = props => {
-	const isButtonDisabled = props.inputValue.trim() === '';
+const ChatInput = ({inputValue, setInputValue, btnClick}) => {
+	const isButtonDisabled = inputValue.trim() === '';
 	
 	return (
 		<section className={classes.ChatInput}>
 			<textarea
-				value={props.inputValue}
+				value={inputValue}
 				placeholder={'Your message'}
 				onChange={(event) => {
-					props.setInputValue(event.target.value)
+					setInputValue(event.target.value)
 				}}
 			/>
 			<Button
-				btnText='Send'
+				text='Send'
 				disabled={isButtonDisabled}
-				clicked={props.btnClick}
+				onClick={btnClick}
 			/>
 		</section>
 	)

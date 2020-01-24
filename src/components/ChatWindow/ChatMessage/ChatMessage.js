@@ -1,9 +1,9 @@
 import React from "react";
 import classes from './ChatMessage.module.css';
 
-const ChatMessage = props => {
+const ChatMessage = ({isAuthor, text, time}) => {
 	return (
-		<p className={props.isAuthor ? classes.User : ''}>{props.text}<span>({props.time})</span></p>
+		<p className={isAuthor ? classes.User : ''}>{text}<span>({time})</span></p>
 	)
 };
 

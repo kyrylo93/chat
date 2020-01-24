@@ -6,22 +6,30 @@ import Modal from "../../components/UI/Modal/Modal";
 import {SitePageUserContext} from "../../context/SitePageUserContext";
 
 const MainPage = () => {
-	const [isModalVisible, setModalVisibility] = useState(false);
-	const [makeRedirect, setMakeRedirect] = useState(false);
-	const { isUserRegistered } = useContext(SitePageUserContext);
+	const [isModalVisible, setModalVisible] = useState(false);
+	const [doRedirect, setDoRedirect] = useState(false);
+	const { isUserRegistered, setUserRegistered } = useContext(SitePageUserContext);
+	
+	if (doRedirect) {
+		return <Redirect to='/pen-pals' />;
+	}
+	
 	const modal = isModalVisible
 		? <Modal
 			show={isModalVisible}
 			title='You were a success!'
 			btnText='Choose your pen pal'
-			bntClick={() => setMakeRedirect(true)}
+			onClick={() => {
+				setUserRegistered(true);
+				setDoRedirect(true);
+			}}
 			message="Now you can proceed and choose your chat partner"
-			setModalVisibility={boolean => setModalVisibility(boolean)}
+			onClose={boolean => setModalVisible(boolean)}
 		/>
 		: null;
 	
 	const formStatus = !isUserRegistered
-		? <UserForm setModalVisibility={boolean => setModalVisibility(boolean)} />
+		? <UserForm setModalVisible={boolean => setModalVisible(boolean)} />
 		: <h2 style={{marginTop: '200px'}}>You're already logged</h2>;
 	
 	return (
@@ -30,7 +38,6 @@ const MainPage = () => {
 			<p>Please, fill in the form</p>
 			{formStatus}
 			{modal}
-			{makeRedirect ? <Redirect to='/pen-pals' /> : null}
 		</section>
 	)
 };

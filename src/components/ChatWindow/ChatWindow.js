@@ -2,9 +2,9 @@ import React from "react";
 import classes from './ChatWindow.module.css';
 import ChatMessage from "./ChatMessage/ChatMessage";
 
-const ChatWindow = props => {
+const ChatWindow = ({msgs}) => {
 	
-	const messages = props.messages.map(msg => {
+	const messages = msgs.map(msg => {
 		return <ChatMessage isAuthor={msg.isAuthor} key={Math.random()} text={msg.text} time={msg.time} />
 	});
 	

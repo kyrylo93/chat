@@ -6,10 +6,10 @@ import {SitePageUserContext} from "../../../context/SitePageUserContext";
 
 
 const NavigationItems = () => {
-	const { isUserRegistered, isUserPickedUser } = useContext(SitePageUserContext);
+	const { isUserRegistered, isPenPalPicked } = useContext(SitePageUserContext);
 	
 	const penPalsPath = isUserRegistered ? '/pen-pals' : 'error';
-	const chatPalsPath = isUserPickedUser ? '/chat' : 'error';
+	const chatPalsPath = isPenPalPicked ? '/chat' : 'error';
 	
 	return (
 		<ul className={classes.NavigationItems}>

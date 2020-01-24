@@ -1,16 +1,53 @@
-import React, { useContext } from "react";
+import React, {useContext, useState} from "react";
 import classes from './UserForm.module.css';
 import Input from "../UI/Input/Input";
 import Button from "../UI/Button/Button";
 import inputValidation from "../UI/Input/inputValidation";
 import { UserFormContext } from "../../context/UserFormContext";
-import { SitePageUserContext } from "../../context/SitePageUserContext";
 
-const UserForm = props => {
-	const { userName, setUserName, userAge, setUserAge, userCountry, setUserCountry } = useContext(UserFormContext);
-	const { setUserRegistered } = useContext(SitePageUserContext);
+const UserForm = ({setModalVisible}) => {
+	const [userNameValidation, setUserNameValidation] = useState({
+		type: 'text',
+		id: 'userName',
+		placeholder: 'Your Name',
+		validation: {
+			required: true,
+			minLength: 3,
+			maxLength: 20,
+		},
+		valid: false,
+		touched: false,
+	});
 	
-	const formInputs = [userName, userAge, userCountry];
+	const [userAgeValidation, setUserAgeValidation] = useState({
+		type: 'number',
+		id: 'userAge',
+		placeholder: 'Your Age',
+		validation: {
+			required: true,
+			minValue: 18,
+			maxValue: 100,
+		},
+		valid: false,
+		touched: false,
+	});
+	
+	const [userCountryValidation, setUserCountryValidation] = useState({
+		type: 'text',
+		id: 'userCountry',
+		placeholder: 'Your Country',
+		validation: {
+			required: true,
+			minLength: 3,
+			maxLength: 25,
+		},
+		valid: false,
+		touched: false,
+	});
+	
+	const { setUserName, setUserAge, setUserCountry } = useContext(UserFormContext);
+	
+	const formInputs = [userNameValidation, userAgeValidation, userCountryValidation];
 
 	const inputHandler = (event, inputType, rules) => {
 		const newValue = event.target.value;
@@ -18,34 +55,34 @@ const UserForm = props => {
 		
 		switch (inputType) {
 			case 'userName' :
-				setUserName( prevState => {
+				setUserName(newValue);
+				setUserNameValidation( prevState => {
 					return {
 						...prevState,
-						value: newValue,
-						valid: newIsValid,
 						touched: true,
+						valid: newIsValid,
 					};
 				});
 				break;
 				
 			case 'userAge' :
-				setUserAge(prevState => {
+				setUserAge(newValue);
+				setUserAgeValidation(prevState => {
 					return {
 						...prevState,
-						value: newValue,
-						valid: newIsValid,
 						touched: true,
+						valid: newIsValid,
 					}
 				});
 				break;
 				
 			case 'userCountry' :
-				setUserCountry(prevState => {
+				setUserCountry(newValue);
+				setUserCountryValidation(prevState => {
 					return {
 						...prevState,
-						value: newValue,
-						valid: newIsValid,
 						touched: true,
+						valid: newIsValid,
 					}
 				});
 				break;
@@ -60,14 +97,12 @@ const UserForm = props => {
 			return value.valid ? acc + 1 : acc;
 		}, 0);
 		
-		
 		return !(sum === formInputs.length);
 	};
 	
 	const submitHandler = (event) => {
 		event.preventDefault();
-		setUserRegistered(true);
-		props.setModalVisibility(true);
+		setModalVisible(true);
 	};
 	
 	const inputs = formInputs.map(input => {
@@ -75,7 +110,6 @@ const UserForm = props => {
 		 	<Input
 			    key={input.id}
 				type = {input.type}
-				value = {input.value}
 			    isValid = {input.valid}
 			    isTouched = {input.touched}
 				placeholder = {input.placeholder}
@@ -87,9 +121,9 @@ const UserForm = props => {
 		<form className={classes.UserForm} onSubmit={submitHandler}>
 			{inputs}
 			<Button
-				btnText='Submit'
+				text='Submit'
 				disabled={checkFormValid()}
-				clicked={(e) => submitHandler(e)} />
+				onClick={submitHandler} />
 		</form>
 	)
 };

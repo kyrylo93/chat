@@ -3,23 +3,24 @@ import classes from './Modal.module.css';
 import Button from "../Button/Button";
 import Backdrop from "../Backdrop/Backdrop";
 
-const Modal = props => {
-	const button = props.btnText
+const Modal = ({btnText, onClick, onClose, title, message}) => {
+	
+	const button = btnText
 		? <Button
-			btnText={props.btnText}
-			clicked={props.bntClick}
+			text={btnText}
+			onClick={onClick}
 		/>
 		: null;
 	
 	return (
-		<React.Fragment>
-			<Backdrop close={() => props.setModalVisibility(false)} />
+		<>
+			<Backdrop close={() => onClose(false)} />
 			<section className={classes.Modal}>
-				<h3>{props.title}</h3>
-				<p>{props.message}</p>
+				<h3>{title}</h3>
+				<p>{message}</p>
 				{button}
 			</section>
-		</React.Fragment>
+		</>
 	)
 };
 

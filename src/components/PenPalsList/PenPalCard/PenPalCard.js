@@ -2,15 +2,15 @@ import React from "react";
 import classes from './PenPalCard.module.css';
 
 
-const PenPalCard = props => {
+const PenPalCard = ({cardClick, username, name, email}) => {
 	return (
-		<article onClick={props.cardClick} className={classes.PenPalCard}>
-			<h3>{props.username}</h3>
-			<p>{props.name}</p>
+		<article onClick={cardClick} className={classes.PenPalCard}>
+			<h3>{username}</h3>
+			<p>{name}</p>
 			<a
 				onClick={ event => event.stopPropagation() }
-				href={`mailto: ${props.email}`}
-			>{props.email}
+				href={`mailto: ${email}`}
+			>{email}
 			</a>
 		</article>
 	)

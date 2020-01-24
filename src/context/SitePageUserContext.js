@@ -2,14 +2,14 @@ import React, { useState } from "react";
 
 export const SitePageUserContext = React.createContext({});
 
-export const SitePageUserAccessProvider = props => {
+export const SitePageUserAccessProvider = ({children}) => {
 	const [isUserRegistered, setUserRegistered] = useState(false);
-	const [isUserPickedUser, setUserPickedUser] = useState(false);
+	const [isPenPalPicked, setUserPickedUser] = useState(false);
 
 	return (
-		<SitePageUserContext.Provider children={props.children} value={{
+		<SitePageUserContext.Provider children={children} value={{
 			isUserRegistered, setUserRegistered,
-			isUserPickedUser, setUserPickedUser
+			isPenPalPicked, setUserPickedUser
 		}}/>
 	)
 };

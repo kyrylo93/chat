@@ -1,15 +1,15 @@
 import React from "react";
 import classes from './Input.module.css';
 
-const Input = props => {
+const Input = ({type, value, inputHandler, placeholder, isTouched, isValid}) => {
 	
 	return (
 		<input
-			type = {props.type}
-			value = {props.value}
-			onChange={props.inputHandler}
-			placeholder = {props.placeholder}
-			className={ props.isTouched ? props.isValid ? classes.Valid : classes.Invalid : null}
+			type = {type}
+			value = {value}
+			onChange={inputHandler}
+			placeholder = {placeholder}
+			className={ isTouched ? isValid ? classes.Valid : classes.Invalid : null}
 		/>)
 };
 

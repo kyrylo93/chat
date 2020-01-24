@@ -2,8 +2,8 @@ import React from "react";
 import PenPalCard from "./PenPalCard/PenPalCard";
 import classes from './PenPalsList.module.css';
 
-const PenPalsList = props => {
-	const penPals = props.penPals.map(el => {
+const PenPalsList = ({penPals, cardClick}) => {
+	const penPalsList = penPals.map(el => {
 		return (
 			<PenPalCard
 				key={el.id}
@@ -11,7 +11,7 @@ const PenPalsList = props => {
 				email={el.email}
 				username={el.username}
 				cardClick={() =>
-					props.cardClick({ id: el.id, username: el.username})
+					cardClick({ id: el.id, username: el.username})
 				}
 			/>
 		)
@@ -19,7 +19,7 @@ const PenPalsList = props => {
 	
 	return (
 		<ul className={classes.PenPalsList}>
-			{penPals}
+			{penPalsList}
 		</ul>
 	)
 };
